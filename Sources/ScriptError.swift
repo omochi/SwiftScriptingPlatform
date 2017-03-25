@@ -6,7 +6,7 @@
 //
 //
 
-public struct ScriptError : Error {
+public struct ScriptError: Error {
     var statusCode: Int32
 }
 

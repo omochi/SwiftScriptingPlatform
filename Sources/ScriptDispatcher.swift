@@ -8,7 +8,7 @@
 
 import Darwin
 
-public enum ScriptDispatchError : Error {
+public enum ScriptDispatchError: Error {
     case notSpecified
     case invalidScript(name: String)
 }
