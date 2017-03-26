@@ -10,7 +10,7 @@
 		D6CAF1471E8724B9004F277A /* ScriptError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAF1461E8724B9004F277A /* ScriptError.swift */; };
 		D6CAF1491E8724DE004F277A /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAF1481E8724DE004F277A /* Script.swift */; };
 		D6CAF14B1E87250D004F277A /* ScriptDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAF14A1E87250D004F277A /* ScriptDispatcher.swift */; };
-		D6CAF14D1E872558004F277A /* ScriptingPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAF14C1E872558004F277A /* ScriptingPlatform.swift */; };
+		D6CAF15F1E874995004F277A /* ScriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAF15E1E874995004F277A /* ScriptService.swift */; };
 		OBJ_28 /* SwiftScriptingPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* SwiftScriptingPlatformTests.swift */; };
 		OBJ_30 /* SwiftScriptingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* SwiftScriptingPlatform.framework */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,7 @@
 		D6CAF1461E8724B9004F277A /* ScriptError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptError.swift; sourceTree = "<group>"; };
 		D6CAF1481E8724DE004F277A /* Script.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
 		D6CAF14A1E87250D004F277A /* ScriptDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptDispatcher.swift; sourceTree = "<group>"; };
-		D6CAF14C1E872558004F277A /* ScriptingPlatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptingPlatform.swift; sourceTree = "<group>"; };
+		D6CAF15E1E874995004F277A /* ScriptService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptService.swift; sourceTree = "<group>"; };
 		OBJ_12 /* SwiftScriptingPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScriptingPlatformTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* SwiftScriptingPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftScriptingPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_15 /* SwiftScriptingPlatformTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftScriptingPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +105,7 @@
 				D6CAF1461E8724B9004F277A /* ScriptError.swift */,
 				D6CAF1481E8724DE004F277A /* Script.swift */,
 				D6CAF14A1E87250D004F277A /* ScriptDispatcher.swift */,
-				D6CAF14C1E872558004F277A /* ScriptingPlatform.swift */,
+				D6CAF15E1E874995004F277A /* ScriptService.swift */,
 			);
 			name = SwiftScriptingPlatform;
 			path = Sources;
@@ -198,8 +198,8 @@
 			files = (
 				D6CAF14B1E87250D004F277A /* ScriptDispatcher.swift in Sources */,
 				D6CAF1491E8724DE004F277A /* Script.swift in Sources */,
-				D6CAF14D1E872558004F277A /* ScriptingPlatform.swift in Sources */,
 				D6CAF1471E8724B9004F277A /* ScriptError.swift in Sources */,
+				D6CAF15F1E874995004F277A /* ScriptService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

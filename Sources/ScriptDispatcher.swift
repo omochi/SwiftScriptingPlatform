@@ -14,6 +14,8 @@ public enum ScriptDispatchError: Error {
 }
 
 public class ScriptDispatcher {
+    public weak var service: ScriptService?
+    
     public func main() throws {
         let args = CommandLine.arguments
         
@@ -23,9 +25,11 @@ public class ScriptDispatcher {
         
         let name = args[1]
         
-        guard let script = scripts[name] else {
+        guard let scriptFactory = scripts[name] else {
             throw ScriptDispatchError.invalidScript(name: name)
         }
+        
+        let script = scriptFactory.init(service: service!)
         
         do {
             try script.main(args: Array(args[2..<args.count]))
@@ -38,5 +42,5 @@ public class ScriptDispatcher {
         exit(EXIT_SUCCESS)
     }
     
-    public var scripts: [String: Script] = [:]
+    public var scripts: [String: Script.Type] = [:]
 }

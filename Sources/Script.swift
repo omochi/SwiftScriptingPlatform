@@ -7,5 +7,7 @@
 //
 
 public protocol Script {
+    init(service: ScriptService)
+    static var name: String { get }
     func main(args: [String]) throws
 }
