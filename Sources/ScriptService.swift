@@ -8,7 +8,7 @@
 
 import Foundation
 
-public typealias ScriptServiceMainBlock = ( (Script.Type) -> Void ) -> Void
+public typealias ScriptServiceMainBlock = ( (String, Script.Type) -> Void ) -> Void
 
 public class ScriptService {
     public init() {
@@ -24,8 +24,8 @@ public class ScriptService {
     public let dispatcher: ScriptDispatcher
     
     public func main(block: ScriptServiceMainBlock) throws {
-        block { (scriptFactory) in
-            dispatcher.scripts[scriptFactory.name] = scriptFactory
+        block { (scriptName, scriptFactory) in
+            dispatcher.scripts[scriptName] = scriptFactory
         }
         try dispatcher.main()
     }
